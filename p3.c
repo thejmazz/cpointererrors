@@ -7,17 +7,17 @@ int main() {
 	int *p, *q, *r;
 
 	q = &c;
-	p = &a; 
+	p = &a;
 	*q = b;
 	q = malloc(sizeof(int));
-	r = q;g
-	*r = a + *q + c; 
-	free(p); 
+	r = q;
+	*r = a + *q + c;
+	free(p);
 	r = malloc(sizeof(int));
 	free(q);
 	a = b + c + *r;
 	*q = *r;
 	free(r);
-		
+
 	return 0;
 }
