@@ -8,4 +8,4 @@ all: $(PROGS)
 	gcc -w -g -o bin/$@ $<
 
 clean:
-	rm bin/*
+	rm bin
