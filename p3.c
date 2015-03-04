@@ -1,3 +1,8 @@
+// P - dereferencing a pointer w/o having allocated memory for it
+// D - deallocating memory that has already been deallocated
+// H - deallocating memory that is not located on the heap
+// M - memory leak
+
 #include <stdio.h>
 #include <stdlib.h>
 

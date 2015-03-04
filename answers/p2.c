@@ -7,6 +7,7 @@
 #include <stdlib.h>
 
 int main() {
+
 	int a=0, b=1, c=2;
 	int *p, *q, *r;
 
@@ -15,9 +16,13 @@ int main() {
 	q = &c;
 	*q = b;
 	q = malloc(sizeof(int));
-	*r = a + b + *p;
 	free(p);
+	r = q;
+	p = malloc(sizeof(int));
+	*p = *r;
 	free(q);
+	free(r); // D
+	free(p);
 
 	return 0;
 }

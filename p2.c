@@ -21,7 +21,7 @@ int main() {
 	p = malloc(sizeof(int));
 	*p = *r;
 	free(q);
-	free(r); // D
+	free(r);
 	free(p);
 
 	return 0;

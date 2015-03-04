@@ -15,7 +15,7 @@ int main() {
 	q = &c;
 	*q = b;
 	q = malloc(sizeof(int));
-	*r = a + b + *p;
+	*r = a + b + *p; // P
 	free(p);
 	free(q);
 
