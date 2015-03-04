@@ -5,7 +5,7 @@ PROGS = $(patsubst %.c,%,$(SRCS))
 all: $(PROGS)
 
 %: %.c
-	gcc -g -o $@ $<
+	gcc -g -o bin/$@ $<
 
 clean:
 	rm p1 p2 p3
